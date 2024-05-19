@@ -1,0 +1,83 @@
+﻿@media (max-width: 800px) {
+    .mobile-design {
+        display: none;
+    }
+
+    .btn-responsive {
+        display: none;
+    }
+
+    .ham-menu {
+        display: block;
+        position: absolute;
+        right: 10px;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    .ham-menu-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .ham-menu-list li {
+            font-size: 20px;
+            padding: 1rem;
+            width: 100%;
+            border-bottom: 1px solid black;
+            text-align: center;
+        }
+
+            .ham-menu-list li :hover {
+                background-color: #ffffff;
+            }
+
+            .ham-menu-list li a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                text-decoration: none;
+            }
+
+                .ham-menu-list li a:hover {
+                    color: black !important;
+                }
+
+    .carousel-item:hover ~ .carousel-item {
+        transform: none;
+    }
+
+    .carousel__container:hover .carousel-item {
+        opacity: none;
+    }
+
+        .carousel__container:hover .carousel-item:hover {
+            transform: none;
+            opacity: none;
+        }
+
+    .ipad-ekran-modelleri {
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+    .info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 800px) {
+
+    .ham-menu-Nav {
+        display: none !important;
+    }
+}
