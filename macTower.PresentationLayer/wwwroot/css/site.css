@@ -276,8 +276,6 @@ body {
 }
 
 
-
-
 .carousel {
     text-align: center;
     width: 100%;
@@ -310,20 +308,17 @@ body {
     display: inline-block;
     cursor: pointer;
     transition: 1000ms all;
-    transform-origin: center left;
+    transform-origin: center  ;
     position: relative;
 }
 
-    .carousel-item:hover ~ .carousel-item {
-        transform: translate3d(100px, 0px, 0px);
-    }
-
 .carousel__container:hover .carousel-item {
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
     .carousel__container:hover .carousel-item:hover {
-        transform: scale(1.5);
+        transform: scale(1.2);
+        z-index:999;
         opacity: 1;
     }
 
@@ -360,7 +355,6 @@ body {
         color: #fff;
         margin: 5px 0;
     }
-
 
 .ham-menu {
     display: none;
